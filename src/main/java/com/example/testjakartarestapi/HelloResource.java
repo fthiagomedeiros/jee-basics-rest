@@ -8,6 +8,8 @@ import jakarta.ws.rs.Produces;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Path("/hello-world")
 @NoArgsConstructor
 @AllArgsConstructor
@@ -17,8 +19,8 @@ public class HelloResource {
     private HelloService service;
 
     @GET
-    @Produces("text/plain")
-    public String hello() {
+    @Produces("application/json")
+    public List hello() {
         return service.getHello();
     }
 }

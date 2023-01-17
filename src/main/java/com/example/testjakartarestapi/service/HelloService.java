@@ -1,5 +1,7 @@
 package com.example.testjakartarestapi.service;
 
+import java.util.List;
+
 public interface HelloService {
-    String getHello();
+    List getHello();
 }
